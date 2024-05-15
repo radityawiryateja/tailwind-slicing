@@ -46,7 +46,7 @@ html,
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Plus Jakarta Sans, sans-serif;
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -446,6 +446,15 @@ video {
   display: none;
 }
 
+html {
+  font-family: "Plus Jakarta Sans ", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -586,6 +595,99 @@ video {
   .container {
     max-width: 1536px;
   }
+}
+
+.cstm-btn {
+  border-radius: 0.75rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(67 24 255 / var(--tw-bg-opacity));
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.cstm-p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(104 118 159 / var(--tw-text-opacity));
+}
+
+.cstm-h {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 800;
+  --tw-text-opacity: 1;
+  color: rgb(27 37 89 / var(--tw-text-opacity));
+}
+
+.cstm-h1 {
+  text-align: center;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 800;
+  --tw-text-opacity: 1;
+  color: rgb(27 37 89 / var(--tw-text-opacity));
+}
+
+.cstm-h2 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 800;
+  --tw-text-opacity: 1;
+  color: rgb(27 37 89 / var(--tw-text-opacity));
+}
+
+.cstm-box-shadow {
+  border-radius: 16px;
+  background: #fff;
+  /* Main shadow */
+  box-shadow: 0px 32px 64px -12px rgba(85, 105, 135, 0.13);
+}
+
+.cstm-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.cstm-icon-2 {
+  display: flex;
+  height: 4rem;
+  min-width: 4rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(67 24 255 / var(--tw-bg-opacity));
+}
+
+.section {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.cstm-background-img {
+  background-image: url("img/Thunder1.png");
+  background-size: cover;
+  /* Untuk memastikan gambar mengisi seluruh latar belakang */
+  background-position: center;
+  /* Untuk mengatur posisi gambar di tengah */
+  background-repeat: no-repeat;
+  /* Untuk menghindari pengulangan gambar */
 }
 
 .fixed {
@@ -870,102 +972,16 @@ video {
 // <uniquifier>: Use a unique and descriptive class name
 // <weight>: Use a value from 200 to 800 */
 
-.plus-jakarta-sans-400 {
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.cstm-btn {
-  border-radius: 0.75rem;
+.hover\:bg-main-2:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(67 24 255 / var(--tw-bg-opacity));
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 1.75rem;
-  padding-right: 1.75rem;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  font-weight: 700;
+}
+
+.hover\:bg-opacity-5:hover {
+  --tw-bg-opacity: 0.05;
+}
+
+.hover\:text-main-0:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.cstm-p {
-  font-size: 1rem;
-  line-height: 1.5rem;
-  --tw-text-opacity: 1;
-  color: rgb(104 118 159 / var(--tw-text-opacity));
-}
-
-.cstm-h {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-  font-weight: 800;
-  --tw-text-opacity: 1;
-  color: rgb(27 37 89 / var(--tw-text-opacity));
-}
-
-.cstm-h1 {
-  text-align: center;
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-  font-weight: 800;
-  --tw-text-opacity: 1;
-  color: rgb(27 37 89 / var(--tw-text-opacity));
-}
-
-.cstm-h2 {
-  font-size: 1.5rem;
-  line-height: 2rem;
-  font-weight: 800;
-  --tw-text-opacity: 1;
-  color: rgb(27 37 89 / var(--tw-text-opacity));
-}
-
-.cstm-box-shadow {
-  border-radius: 16px;
-  background: #fff;
-  /* Main shadow */
-  box-shadow: 0px 32px 64px -12px rgba(85, 105, 135, 0.13);
-}
-
-.cstm-col {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
-.cstm-icon-2 {
-  display: flex;
-  height: 4rem;
-  min-width: 4rem;
-  align-items: center;
-  justify-content: center;
-  border-radius: 1.5rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(67 24 255 / var(--tw-bg-opacity));
-}
-
-.section {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-}
-
-.cstm-background-img {
-  background-image: url("img/Thunder1.png");
-  background-size: cover;
-  /* Untuk memastikan gambar mengisi seluruh latar belakang */
-  background-position: center;
-  /* Untuk mengatur posisi gambar di tengah */
-  background-repeat: no-repeat;
-  /* Untuk menghindari pengulangan gambar */
 }

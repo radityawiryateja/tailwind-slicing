@@ -35,8 +35,8 @@
 .cstm-h2 {
   @apply text-main-4 text-2xl font-extrabold;
 }
+
 .cstm-box-shadow {
-  border-radius: 16px;
   background: #fff;
 
   /* Main shadow */

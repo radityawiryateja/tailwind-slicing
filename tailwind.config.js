@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content:  ['./*.html','./**/*.html'],
+  content:  [
+    './*.html','./**/*.html',
+    "./node_modules/flowbite/**/*.js"
+  ],
   theme: {
     fontFamily: {
       sans : ["Plus Jakarta Sans", "sans-serif"]
@@ -17,5 +20,10 @@ module.exports = {
     },
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('flowbite/plugin')({
+      charts: true,
+  }),
+  ],
 };
